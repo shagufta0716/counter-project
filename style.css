@@ -1,0 +1,84 @@
+/* Overall body style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff 0%, #d9e1ff 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Counter container with flexbox for horizontal alignment */
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;  /* Space between buttons and number */
+  margin-top: 30px;
+}
+
+/* Buttons + and - styling */
+#plus, #minus {
+  height: 55px;
+  width: 55px;
+  font-size: 28px;
+  color: white;
+  background-color: #3b82f6; /* blue color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#plus:hover, #minus:hover {
+  background-color: #2563eb;
+  transform: translateY(-3px);
+}
+
+/* Number display styling */
+#number-display {
+  min-width: 70px;
+  height: 55px;
+  font-size: 42px;
+  color: #1e40af;
+  background-color: #e0e7ff;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(224, 231, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Reset button container for center alignment */
+.reset-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Reset button styling */
+#reset {
+  font-size: 20px;
+  background-color: #facc15; /* Yellow shade */
+  color: #1e40af;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(250, 204, 21, 0.6);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#reset:hover {
+  background-color: #eab308;
+  transform: translateY(-3px);
+}
